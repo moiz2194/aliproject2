@@ -1,0 +1,37 @@
+.bold{
+    font-weight: bold;
+}
+.sf1-list li::before{
+    top: 50% ;
+    left: -5px;
+}
+.sf1-list li{
+   list-style: none;
+}
+
+.sfsection2{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    
+}
+.both{
+    display: flex;
+}
+.sf2-list li::before{
+    top: 1rem ;
+}
+.sf2-list li{
+    width: 90% ;
+}
+
+@media (max-width:835px) {
+    .both{
+        display: block;
+    }
+}
+@media (max-width:421px) {
+    .sf2-list li{
+        width: 100% ;
+    }
+}

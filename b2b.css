@@ -1,0 +1,63 @@
+.b1-list li::before{
+    top: 50%;
+    left: -10px;
+}
+
+.b1-right{
+    align-self: center;
+}
+.b1-right h1{
+   min-width: max-content;
+}
+.b2-image {
+    align-self: center;
+ }
+.bsection2{
+    height: auto;
+    margin-top: 7rem;
+}
+.bold{
+    font-weight: bold;
+}
+.bsection3{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.bsection3 img{
+    width: 85vw;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+.bsection4{
+    background-color: rgba(0, 232, 250, 0.2);
+   color: black;
+   flex-direction: row;
+   align-items: center;
+   padding-bottom: 2.3rem;
+}
+@media (max-width:1000px) {
+    .b1-right h1{
+        min-width: auto;
+     }
+     
+}
+@media (max-width:550px) {
+    .b2-image img{
+        width: 250px;
+    }
+}
+@media (max-width:850px) {
+    .b2-image img{
+        margin-top: 2rem;
+     }
+     .bsection4{
+        background-color: rgba(0, 232, 250, 0.2);
+       color: black;
+       flex-direction: column;
+    }
+     .bsection4  button{
+      margin-top: 1rem;
+    }
+}
