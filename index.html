@@ -98,9 +98,75 @@
         <h3>
             Would you like to be part of the exclusive group ?
         </h3>
-        <button class="btn btn-normal s4-btn mt-5">
+        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-normal s4-btn mt-5">
             Register here
         </button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div style="color: black;" class="modal-body">
+                        <!-- Section 1 -->
+                        <section class="csection1 p-3">
+                            <h3 class="bold text-center">Register</h3>
+                            <div class="container register">
+                                <form class="contact ">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">First Name <span
+                                                class="red">*</span></label>
+                                        <input type="text" class="form-control" id="name"
+                                            placeholder="Enter your First name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Last Name <span
+                                                class="red">*</span></label>
+                                        <input type="text" class="form-control" id="lastname"
+                                            placeholder="Enter your last name">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address<span
+                                                class="red">*</span></label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your email">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone Number<span
+                                                class="red">*</span></label>
+                                        <input type="text" class="form-control" placeholder="Enter your Phone Number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Company Name <span
+                                                class="red">*</span></label>
+                                        <input type="text" class="form-control" id="lastname"
+                                            placeholder="Enter your last name">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="type" class="form-label">Type <span class="red">*</span></label>
+                                        <select class="form-select" aria-label="Select option">
+                                            <option selected>Select an option</option>
+                                            <option value="option1">Exclusive Group</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button style="background-color: black;color: white;" type="submit" class="btn c1-btn btn-normal">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Section 5 -->
     <section class=" section5">
@@ -158,7 +224,7 @@
                 vehicles are sanitized before drop off and return, to reduce the spread of COVID-19.
 
             </p>
-            <button onclick="window.location.href='safety.html'"  class="btn s5-btn s1-btn btn-normal">Read more</button>
+            <button onclick="window.location.href='safety.html'" class="btn s5-btn s1-btn btn-normal">Read more</button>
 
         </div>
 
